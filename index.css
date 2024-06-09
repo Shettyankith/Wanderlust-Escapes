@@ -5,14 +5,9 @@
 }
 
 
-/* font-family: 'Days One', sans-serif;
-font-family: 'Khand', sans-serif;
-font-family: 'Londrina Outline', sans-serif;
-font-family: 'Roboto Mono', monospace; */
 
 
 body{
-    background-image: url("homepage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -43,16 +38,60 @@ body{
 
 
 /* hero code section */
-.hero{
+.hero {
+    position: relative;
     width: 100%;
     height: 100vh;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     line-height: 50px;
+    overflow: hidden; 
 }
 
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transform: translate(-50%, -50%);
+    z-index: -1; 
+}
+
+.hero h1, .hero h3, .btn {
+    z-index: 1; 
+}
+
+.hero h1 {
+    max-width: 90%;
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.hero h3 {
+    font-size: 1.3em;
+    font-weight: 300;
+    max-width: 90%;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.btn {
+    background-color: #0C6BA8;
+    max-width: 120px;
+    color: white;
+    margin-top: 2em;
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+}
 .hero h1{
     max-width: 90%;
     font-size: 3em;
@@ -267,14 +306,7 @@ body{
     text-transform: uppercase;
 }
 
-/* .btn{
-    width: 8rem;
-    height: 40px;
-    color: white;
-    font-family: 'Khand', sans-serif;
-    font-size: 1.3em;
-    background-color: #0C6BA8;
-} */
+
 /* Tours section code ends here */
 
 
@@ -406,6 +438,7 @@ body{
     position: absolute;
     color: white;
     right: 0;
+    top: 0rem;
     font-size: 2rem;
     cursor: pointer;
     display: none;
@@ -607,6 +640,7 @@ body{
     .navbar a{
         display: block;
         padding: 0.5rem;
+        margin-left: 0;
         transition: .4s ease-in;
         transform: translateY(10px);
     }
