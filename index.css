@@ -1,0 +1,766 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* font-family: 'Days One', sans-serif;
+font-family: 'Khand', sans-serif;
+font-family: 'Londrina Outline', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+
+
+body{
+    background-image: url("homepage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.h5{
+    font-family: 'Roboto Condensed', sans-serif;  
+    font-size: 1em;
+    color: white;
+    font-weight: 400;
+   letter-spacing: 1em;
+}
+
+.h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+}
+
+.head{
+    min-height: 250px;
+    border: 1px solid black;
+    padding: 30px;
+    line-height: 3em;
+}
+
+
+
+/* hero code section */
+.hero{
+    width: 100%;
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    line-height: 50px;
+}
+
+.hero h1{
+    max-width: 90%;
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+.hero h3{
+    font-size: 1.3em;
+    font-weight: 300;
+    max-width: 90%;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.btn{
+   background-color:  #0C6BA8;
+    max-width: 120px;
+    color: white;
+    margin-top: 2em;
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+}
+
+
+/* hero code section ends here*/
+
+
+
+
+
+
+
+/* About section code stars here */
+#about-us{
+    background-color: white;
+}
+
+.about{
+    background-image: url("aboutheader.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.intro{
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.intro img{
+   width: 400px;
+   height: 400px;
+    max-width: 45%;
+    
+}
+
+
+.paragraph{
+    min-width: 55%;
+    width: 50%;
+    color: black;
+    font-family: 'Khand', sans-serif;
+    line-height: 2em;
+    margin-left: 2em;
+    flex-grow: 1;
+}
+
+.guides{
+    background-color: #0C6BA8;
+    min-height: 430px;
+    padding: 2em;
+    text-align: center;
+}
+
+.guides h1{
+    color: white;
+    font-size: 2em;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.guides img{
+    object-fit: cover;
+    width: 350px;
+    height: 400px;
+}
+
+.details{
+    max-width: 325px;
+    height: 80px;
+    background-color: #0C2D48;
+    z-index: 99;
+    position: relative;
+    bottom: 40px;
+    left: 12px;
+    color: white;
+    line-height: 2em;
+    text-align: center;
+    padding: 0.6em;
+}
+
+.details h3{
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.details h5{
+    font-family: 'Khand', sans-serif;
+    letter-spacing: 5px;
+}
+/* About section code ends here */
+
+
+
+
+
+
+/* Tours section code starts here */
+
+.tours{
+    background-image: url("toursheader.jpg");
+    background-position:center;
+    background-size: cover;
+}
+
+.places{
+    padding-top: 2em;
+    display: grid;
+    gap: 1em;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.rome{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.maldives{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.india{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.france{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.canada{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.rome img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.maldives img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.picture{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.places h3{
+    position: relative;
+    bottom: 30px;
+    left :10px;
+    color: white;
+    font-family: 'Khand', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/* .btn{
+    width: 8rem;
+    height: 40px;
+    color: white;
+    font-family: 'Khand', sans-serif;
+    font-size: 1.3em;
+    background-color: #0C6BA8;
+} */
+/* Tours section code ends here */
+
+
+
+
+
+
+
+/* reviews section starts here */
+.reviews{
+    background-image: url("reviewsheader.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#review{
+    height: max-content;
+}
+
+.clientrev{
+    margin-top: 2em;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-wrap: wrap;
+}
+
+.rev{
+    max-width: 25%;
+    min-height: 250px;
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.rev p{
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+.box{
+    display: flex;
+   justify-content: start;
+   align-items: center;
+   margin: 1em;
+}
+
+
+
+.name{
+    margin: 1em;
+}
+
+.name p{
+    font-size: 0.8em;
+    font-family: 'Days One', sans-serif;
+    font-weight: 400;
+}
+
+
+.name h5{
+    font-weight: 300;
+    font-size: 0.7em;
+    font-family: 'Days One', sans-serif;
+}
+
+.testimonial{
+    font-family: 'Khand', sans-serif;
+}
+
+
+.photo img{
+   width: 100px;
+   height: 100px;
+   object-fit: cover;
+   border-radius: 50%;
+}
+/* reviews section ends  here */
+
+
+
+
+/* Navigation bar code section */
+.header{
+    background: #12699F;
+    backdrop-filter: blur(50px);
+    width: 100%;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    position: fixed;
+    z-index: 999;
+}
+
+.navbar{
+    margin-right: 4rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-family: 'Khand', sans-serif;
+    color: white;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid #004F4A;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+
+.logo{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+}
+/* Navigationn bar code ends here */
+
+
+/* Icons code section */
+.icons{
+    position: absolute;
+    color: white;
+    right: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+#close-icon{
+    display: none;
+}
+/* Icons code ends here */
+
+
+/* COntact US */
+.contactus{
+    background-image: url("https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.box1{
+    justify-content: center;
+    display: flex;
+    padding: 3rem;
+}
+
+.right,.left{
+    width: 35%;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.left p{
+    font-family: 'Khand', sans-serif;
+}
+
+.left h4{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.left h6{
+    font-family: 'Khand', sans-serif;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.right input,textarea{
+    height: 30px;
+    margin: 1rem;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Khand', sans-serif;
+    font-size: 1rem;
+}
+
+.right button{
+    margin-top: 2rem;
+    margin-left: 10px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: #12699F;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+.footer-container,.footer-bottom{
+    background-color: #12699F;
+    color: white;
+    font-family: 'Khand', sans-serif;
+}
+
+
+.footer-container{
+    display: flex;
+    padding: 2rem;
+    border-bottom: 1px solid white;
+}
+
+
+.footer-container h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300  !important;
+}
+
+
+.address{
+    width: 40%;
+}
+
+.contact p strong{
+    margin: 0.7rem 0;
+}
+
+.footer-section p{
+    font-size: 1.2rem;
+}
+
+.links{
+    width: 20%;
+    padding-left: 2rem;
+}
+
+.links ul li{
+    list-style: none;
+}
+
+.links ul li a{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.links ul li a:hover{
+    text-decoration: underline;
+}
+
+.social{
+    width: 15%;
+}
+
+.social-links{
+    width: 100%;
+}
+
+.social-links a{
+    color: white;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    font-family: 'Khand', sans-serif !important;
+    font-size: 1.4rem !important;
+}
+
+.social-links a:hover{
+    text-decoration: underline;
+}
+
+.newsletter input{
+    height: 40px;
+    width:  150px;
+    border: none;
+}
+
+.newsletter button{
+    height: 40px;
+    width: 100px;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: transparent;
+    border: 2px solid white ;
+    color: white;
+}
+.footer-bottom{
+    padding-left: 2rem;
+}
+
+/* Breakpoints */
+@media (max-width:1000px){
+    /* Responsive navigation bar code section */
+    .icons{
+        display: inline;
+       padding: 0.5rem 2rem;
+    }
+
+
+    .logo{
+        padding-left: 2rem;
+    }
+
+
+    .header{
+        display: block;
+        padding:  0.5rem 0;
+    }
+
+    .navbar{
+        height: 0;
+        overflow: hidden;
+        text-align: center;
+        background: #12699F;
+        backdrop-filter: blur(50px);
+        width: 100%;
+        transition: .4s ease-in;
+        transform: translateY(10px);
+    }
+
+    .navbar a{
+        display: block;
+        padding: 0.5rem;
+        transition: .4s ease-in;
+        transform: translateY(10px);
+    }
+
+    .navbar a:hover{
+        border: none;
+        opacity: 0.9;
+        box-shadow: none;
+    }
+
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+
+    #check:checked~.navbar{
+        height: 240px;
+    }
+
+    /* Responsive navigation bar code ends here */
+
+    /* hero responsive code section */
+    .hero h1{
+        font-size:5vw;
+    }
+    .hero h3{
+        font-size: 2.5vw;
+    }
+    
+
+    /* ABout responsive code */
+    .intro{
+        flex-direction: column;
+        min-width:  95%;
+        padding: 0.5em;
+    }
+
+    
+    .intro img{
+    min-width: 55%;
+}
+
+    .paragraph{
+        width: 95%;
+        margin: 0.3em;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    /* Tours responsive code section */
+    .places{
+        width: 95%;
+    }
+
+    /* Reviews */
+    .width{
+        max-width: 40% !important;
+    }
+
+    /* Conatct us */
+    .box1{
+        flex-direction: column;
+    }
+    .right,.left{
+        width: 100%;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+    .address,.links,.social,.newsletter{
+        width: 100%;
+        margin: 1rem;
+    }
+    .links{
+        margin-left: 0;
+        padding-left: 1rem;
+    }
+}
+
+
+
+@media (max-width:600px){
+    .places{
+        gap:0.2em;
+    }
+.rome{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.maldives{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.india{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.france{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.canada{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+/* Reviews */
+.width{
+    max-width: 100% !important;
+}
+
+}
+
+
+
+@media (max-width:400px){
+    .logo{
+        font-size: 6vw;
+    }
+    .icons{
+        padding-top: 0;
+    }
+
+    .hero h1{
+        font-size: 9vw;
+        line-height: 50px;
+        width: 90%;
+    }
+    .hero h3{
+        font-size: 4.5vw;
+        width: 90%;
+        line-height: 50px;
+        line-height: 20px;
+    }
+    .intro img{
+        min-width: 95%;
+    }
+}
