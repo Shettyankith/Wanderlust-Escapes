@@ -14,8 +14,8 @@ Wanderlust Escapes is a travel website designed to inspire and guide travelers o
 
 
 ## 📸 Screenshots
-![Homepage Screenshot](screenshots/home.png)
+![Homepage Screenshot](screenshots/homePage.png)
 
-![Places Screenshot](screenshots/places.png)
+![Places Screenshot](screenshots/placesPage.png)
 
 
